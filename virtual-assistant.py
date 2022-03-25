@@ -18,6 +18,10 @@ joke_inp = ["Joke", "joke", "JOKE", "jokes", "Jokes", "laugh", "Laugh"]
 google_inp = ["Google", "google", "search", "SEARCH", "Search"]
 time_inp = ["Time", "time", "TIME", "time?", "Time?"]
 date_inp = ["Date", "date", "DATE", "date?", "Date?"]
+flipcoin_inp = ["Flip", "flip"]
+name_inp = ["name?", "name"]
+age_inp = ["Age", "age", "age?", "Age?"]
+gender_inp = ["Gender", "gender", "Gender?", "gender?"]
 quit_inp = ["quit", "QUIT", "Quit"]
 stopwatch_inp = ["stopwatch", "Stopwatch"]
 print("---- Welcome To JBot ----")
@@ -80,11 +84,19 @@ while assistant == True:
                 final = int(final)
                 print(final, "seconds elapsed")
 
+        elif i in flipcoin_inp:
+            coin = ["Heads", "Tails"]
+            result = random.choice(coin)
+            print(result)
+
+        elif i in name_inp:
+            print("My name is JBot!")
+
+        elif i in age_inp:
+            print("I am less than 1 year old")
+
+        elif i in gender_inp:
+            print("I'm a virtual assistant, I do not have a gender")
+
         elif i in quit_inp:
             assistant = False
-
-        else:
-            print(
-                "Invalid Input, Please check README.md for a list of usable commands for Jbot :)"
-                + "\n"
-            )
