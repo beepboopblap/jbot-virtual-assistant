@@ -13,6 +13,80 @@ API_KEY = "9f138e4e6b815d9c98cf7ec7c79c30c8"
 URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY + "&units=metric"
 
 assistant = True
+random_password = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "rR",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    ")",
+    "(",
+]
 weather_inp = ["Weather", "weather", "WEATHER", "weather?"]
 joke_inp = ["Joke", "joke", "JOKE", "jokes", "Jokes", "laugh", "Laugh"]
 google_inp = ["Google", "google", "search", "SEARCH", "Search"]
@@ -20,8 +94,9 @@ time_inp = ["Time", "time", "TIME", "time?", "Time?"]
 date_inp = ["Date", "date", "DATE", "date?", "Date?"]
 flipcoin_inp = ["Flip", "flip"]
 name_inp = ["name?", "name"]
-age_inp = ["Age", "age", "age?", "Age?"]
+age_inp = ["Age", "age", "age?", "Age?", "old?", "old"]
 gender_inp = ["Gender", "gender", "Gender?", "gender?"]
+passgen_inp = ["Password", "generate", "Generate", "password"]
 quit_inp = ["quit", "QUIT", "Quit"]
 stopwatch_inp = ["stopwatch", "Stopwatch"]
 print("---- Welcome To JBot ----")
@@ -97,6 +172,13 @@ while assistant == True:
 
         elif i in gender_inp:
             print("I'm a virtual assistant, I do not have a gender")
+
+        elif i in passgen_inp:
+
+            random.shuffle(random_password)
+            random_password = ",".join(random_password)
+            random_password = random_password.replace(",", "")
+            print("Randomly generated password:", random_password)
 
         elif i in quit_inp:
             assistant = False
