@@ -38,7 +38,7 @@ Enter these words for the/a ...
 - Google (must input 'google' first to search for something)
 - Joke 
 - Flip (flip a coin)
-- Name, Age, Gender (the bot's info)
+- Name, Age, Gender etc. (the bot's info)
 - password (generates a very strong password)
 - quit (to quit the bot)
 
