@@ -35,6 +35,7 @@ Enter these words for the/a ...
 - Stopwatch
 - Google (must input 'google' first to search for something)
 - Joke 
+- Name, Age, Gender (the bot's info)
 
 
 *Disclaimer: The weather location is currently set for Hong Kong as the default (I wil change this later).*
