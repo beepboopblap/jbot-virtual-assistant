@@ -100,3 +100,7 @@ while assistant == True:
 
         elif i in quit_inp:
             assistant = False
+
+        else:
+            user_inp = str(user_inp)
+            search(user_inp)
