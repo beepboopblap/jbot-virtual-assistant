@@ -40,3 +40,4 @@ Enter these words for the/a ...
 
 
 *Disclaimer: The weather location is currently set for Hong Kong as the default (I wil change this later).*
+*Disclaimer2: Entering a JBot command will search it on google for you.*
