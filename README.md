@@ -37,6 +37,7 @@ Enter these words for the/a ...
 - Joke 
 - Flip (flip a coin)
 - Name, Age, Gender (the bot's info)
+- quit (to quit the bot)
 
 
 *Disclaimer: The weather location is currently set for Hong Kong as the default (I wil change this later).*
