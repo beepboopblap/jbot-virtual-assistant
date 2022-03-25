@@ -7,7 +7,7 @@ JBot is a virtual assistant that may assist you in certain ways. For example if 
 
 1. Install ```python```, link to an installation guide: https://realpython.com/installing-python/
 
-2. Must install the following modules (copy and paste to terminal)
+2. Must install the following modules for certain JBot commands (copy and paste to terminal)
 
 ```
 pip install pyjokes
