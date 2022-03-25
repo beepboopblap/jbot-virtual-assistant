@@ -1,14 +1,16 @@
 import random
 import datetime
 import os
+from subprocess import call
 import requests, json
 import pyjokes
 import time
+import webbrowser
 from pywhatkit import search
 from datetime import date
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-CITY = "Hong Kong"
+CITY = "Hong Kong"  # --- SET THIS TO A CITY OF YOUR CHOICE! ---
 API_KEY = "9f138e4e6b815d9c98cf7ec7c79c30c8"
 URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY + "&units=metric"
 
@@ -99,6 +101,38 @@ gender_inp = ["Gender", "gender", "Gender?", "gender?"]
 passgen_inp = ["Password", "generate", "Generate", "password"]
 quit_inp = ["quit", "QUIT", "Quit"]
 stopwatch_inp = ["stopwatch", "Stopwatch"]
+creator_inp = ["created", "Created"]
+JBot_inp = ["JBot", "jbot", "Jbot", "jBot"]
+ethnicity_inp = ["From", "from"]
+me_inp = ["beepboopblap"]
+feeling_inp = ["How", "how"]
+love_inp = ["love", "Love"]
+who_inp = ["who", "Who"]
+email_inp = ["Email", "Gmail", "gmail", "email", "mail"]
+call_inp = ["Call", "call"]
+all_replies = [
+    weather_inp,
+    joke_inp,
+    google_inp,
+    time_inp,
+    date_inp,
+    flipcoin_inp,
+    name_inp,
+    age_inp,
+    gender_inp,
+    passgen_inp,
+    quit_inp,
+    stopwatch_inp,
+    creator_inp,
+    JBot_inp,
+    ethnicity_inp,
+    me_inp,
+    feeling_inp,
+    love_inp,
+    who_inp,
+    email_inp,
+    call_inp,
+]
 print("---- Welcome To JBot ----")
 print("   made by beepboopblap" + "\n")
 while assistant == True:
@@ -173,12 +207,38 @@ while assistant == True:
         elif i in gender_inp:
             print("I'm a virtual assistant, I do not have a gender")
 
-        elif i in passgen_inp:
+        elif i in creator_inp:
+            print("beepboopblap is my father, he created JBot")
 
+        elif i in JBot_inp:
+            print("JBot is at your service")
+
+        elif i in ethnicity_inp:
+            print("I am a virtual assistant...")
+
+        elif i in me_inp:
+            print("beepboopblap is a great being.")
+
+        elif i in passgen_inp:
             random.shuffle(random_password)
             random_password = ",".join(random_password)
             random_password = random_password.replace(",", "")
             print("Randomly generated password:", random_password)
+
+        elif i in feeling_inp:
+            print("Im feeling great, thanks")
+
+        elif i in love_inp:
+            print("Excuse me?")
+
+        elif i in who_inp:
+            print("I am JBot, your personal virtual assistant")
+
+        elif i in email_inp:
+            print("Sorry, I am not able to send emails")
+
+        elif i in call_inp:
+            print("Sorry, I am not able to make calls")
 
         elif i in quit_inp:
             assistant = False
