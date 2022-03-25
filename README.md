@@ -34,4 +34,4 @@ Enter these words for the/a ...
 - Joke 
 
 
-Disclaimer: The weather location is currently set for Hong Kong as the default (I wil change this later).
+*Disclaimer: The weather location is currently set for Hong Kong as the default (I wil change this later).
