@@ -37,6 +37,7 @@ Enter these words for the/a ...
 - Joke 
 - Flip (flip a coin)
 - Name, Age, Gender (the bot's info)
+- password (generates a very strong password)
 - quit (to quit the bot)
 
 
