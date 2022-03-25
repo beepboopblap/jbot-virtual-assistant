@@ -6,7 +6,7 @@ A virtual assistant created using python
 
 JBot is a virtual assistant that may assist you in certain ways. For example if you need a corny joke to crack you up on your most depressing days, or maybe a stopwatch to time how long you could hold a plank for and much more! 
 
-* **The assistant still has several bugs as it was released recently** *
+**The assistant has a number bugs as it was released recently** 
 
 # Usage
 
