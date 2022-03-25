@@ -35,6 +35,7 @@ Enter these words for the/a ...
 - Stopwatch
 - Google (must input 'google' first to search for something)
 - Joke 
+- Flip (flip a coin)
 - Name, Age, Gender (the bot's info)
 
 
