@@ -57,7 +57,7 @@ random_password = [
     "O",
     "P",
     "Q",
-    "rR",
+    "R",
     "S",
     "T",
     "U",
