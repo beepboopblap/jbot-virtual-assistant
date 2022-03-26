@@ -1,6 +1,6 @@
 # jbot-virtual-assistant
 
-![preview picture for the assistant](preview.png)
+![preview picture for the assistant](preview.jpg)
 
 A virtual assistant created using python
 
