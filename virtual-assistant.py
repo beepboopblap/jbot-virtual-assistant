@@ -117,9 +117,11 @@ email_inp = ["Email", "Gmail", "gmail", "email", "mail"]
 call_inp = ["Call", "call"]
 rps_inp = ["rps"]
 nothing_inp = ["nothing", "Nothing", "NOTHING"]
+version_inp = ["--version"]
 print(Fore.RED + "---- Welcome To JBot ----")
 print("   Made by beepboopblap" + "\n")
 user_name = ""
+version = "JBot Verson 03.26"
 
 
 if os.stat("user.txt").st_size == 0:
@@ -268,6 +270,9 @@ while assistant:
 
         elif i in nothing_inp:
             print("Oh alright then...")
+
+        elif i in version_inp:
+            print(version)
 
         elif i in quit_inp:
             assistant = False
