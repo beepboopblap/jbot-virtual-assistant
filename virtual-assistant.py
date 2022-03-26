@@ -11,6 +11,7 @@ from colorama import init
 from colorama import Fore
 from termcolor import colored
 import pickle
+import wolframalpha
 
 init()
 
@@ -118,10 +119,11 @@ call_inp = ["Call", "call"]
 rps_inp = ["rps"]
 nothing_inp = ["nothing", "Nothing", "NOTHING"]
 version_inp = ["--version"]
+wolframalpha_inp = ["question", "Question", "QUESTION"]
 print(Fore.RED + "---- Welcome To JBot ----")
 print("   Made by beepboopblap" + "\n")
 user_name = ""
-version = "JBot Verson 03.26"
+version = "JBot Verson 03.26.2"
 
 
 if os.stat("user.txt").st_size == 0:
@@ -273,6 +275,15 @@ while assistant:
 
         elif i in version_inp:
             print(version)
+
+        elif i in wolframalpha_inp:
+
+            question = input(colored("Enter your Question: ", "green"))
+            app_id = "96KA2E-PXY975G9W3"
+            client = wolframalpha.Client(app_id)
+            res = client.query(question)
+            answer = next(res.results).text
+            print(answer)
 
         elif i in quit_inp:
             assistant = False
