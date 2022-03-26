@@ -24,6 +24,7 @@ pip install google
 ```
 pip install requests
 ```
+```
 pip install wolframalpha
 ```
 
