@@ -37,6 +37,7 @@ Enter these words for the/a ...
 - Flip (flip a coin)
 - Name, Age, Gender etc. (the bot's info)
 - password (generates a very strong password)
+- rps (play rock, paper, scissors with JBot)
 - quit (to quit the bot)
 
 
