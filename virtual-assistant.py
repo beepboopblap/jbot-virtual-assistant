@@ -116,17 +116,18 @@ who_inp = ["who", "Who"]
 email_inp = ["Email", "Gmail", "gmail", "email", "mail"]
 call_inp = ["Call", "call"]
 rps_inp = ["rps"]
+nothing_inp = ["nothing", "Nothing", "NOTHING"]
 print(Fore.RED + "---- Welcome To JBot ----")
 print("   Made by beepboopblap" + "\n")
 user_name = ""
 
 
 if os.stat("user.txt").st_size == 0:
-    user_name = input("What is your name?: ")
+    user_name = input(colored("What is your name?: ", "blue"))
     pickle.dump(user_name, open("user.txt", "wb"))
 
 user_name = pickle.load(open("user.txt", "rb"))
-print("Hello", user_name)
+print(colored(f"Hello {user_name}", "blue"))
 while assistant:
 
     user_inp = input(colored("What can JBot do for you today?: ", "green"))
@@ -264,6 +265,9 @@ while assistant:
                         print("You Lose")
                     elif inp == "Scissors":
                         print("Draw!")
+
+        elif i in nothing_inp:
+            print("Oh alright then...")
 
         elif i in quit_inp:
             assistant = False
