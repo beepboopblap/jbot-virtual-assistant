@@ -117,7 +117,7 @@ call_inp = ["Call", "call"]
 print(Fore.RED + "---- Welcome To JBot ----")
 print("   Made by beepboopblap" + "\n")
 
-while assistant == True:
+while assistant:
 
     user_inp = input(colored("What can JBot do for you today?: ", "green"))
     user_inp = user_inp.split()
