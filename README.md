@@ -1,5 +1,5 @@
 # jbot-virtual-assistant
-![JBot logo](JBot_logo.jpg)
+![JBot logo](JBot_logo.png)
 
 ![preview picture for the assistant](preview.jpg)
 
