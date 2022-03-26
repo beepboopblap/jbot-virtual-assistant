@@ -114,6 +114,7 @@ love_inp = ["love", "Love"]
 who_inp = ["who", "Who"]
 email_inp = ["Email", "Gmail", "gmail", "email", "mail"]
 call_inp = ["Call", "call"]
+rps_inp = ["rps"]
 print(Fore.RED + "---- Welcome To JBot ----")
 print("   Made by beepboopblap" + "\n")
 
@@ -221,6 +222,39 @@ while assistant:
 
         elif i in call_inp:
             print("Sorry, I am not able to make calls")
+
+        elif i in rps_inp:
+            choices = ["Rock", "Paper", "Scissors"]
+            ai_choice = random.choice(choices)
+
+            inp = input("Choose rock, paper, or scissors: ")
+
+            if inp not in choices:
+                print("Not a choice!")
+
+            else:
+                print("Computer chooses", ai_choice, "!")
+                if ai_choice == "Rock":
+                    if inp == "Rock":
+                        print("Draw!")
+                    elif inp == "Paper":
+                        print("You Lose")
+                    elif inp == "Scissors":
+                        print("You Win!")
+                elif ai_choice == "Paper":
+                    if inp == "Rock":
+                        print("You Lose")
+                    elif inp == "Paper":
+                        print("Draw!")
+                    elif inp == "Scissors":
+                        print("You Win!")
+                elif ai_choice == "Scissors":
+                    if inp == "Rock":
+                        print("You Win!")
+                    elif inp == "Paper":
+                        print("You Lose")
+                    elif inp == "Scissors":
+                        print("Draw!")
 
         elif i in quit_inp:
             assistant = False
