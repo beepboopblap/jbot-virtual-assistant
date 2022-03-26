@@ -5,9 +5,13 @@ from subprocess import call
 import requests, json
 import pyjokes
 import time
-import webbrowser
-from pywhatkit import search
 from datetime import date
+from googlesearch import search
+from colorama import init
+from colorama import Fore
+from termcolor import colored
+
+init()
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 CITY = "Hong Kong"  # --- SET THIS TO A CITY OF YOUR CHOICE! ---
@@ -110,34 +114,12 @@ love_inp = ["love", "Love"]
 who_inp = ["who", "Who"]
 email_inp = ["Email", "Gmail", "gmail", "email", "mail"]
 call_inp = ["Call", "call"]
-all_replies = [
-    weather_inp,
-    joke_inp,
-    google_inp,
-    time_inp,
-    date_inp,
-    flipcoin_inp,
-    name_inp,
-    age_inp,
-    gender_inp,
-    passgen_inp,
-    quit_inp,
-    stopwatch_inp,
-    creator_inp,
-    JBot_inp,
-    ethnicity_inp,
-    me_inp,
-    feeling_inp,
-    love_inp,
-    who_inp,
-    email_inp,
-    call_inp,
-]
-print("---- Welcome To JBot ----")
-print("   made by beepboopblap" + "\n")
+print(Fore.RED + "---- Welcome To JBot ----")
+print("   Made by beepboopblap" + "\n")
+
 while assistant == True:
 
-    user_inp = input("What can JBot do for you today?: ")
+    user_inp = input(colored("What can JBot do for you today?: ", "green"))
     user_inp = user_inp.split()
 
     for i in user_inp:
@@ -172,8 +154,8 @@ while assistant == True:
 
         elif i in google_inp:
             asker = input("what do you want to search for?: ")
-            print("Searching for query")
-            search(asker)
+            for url in search(asker, stop=20):
+                print(url)
 
         elif i in time_inp:
             now = datetime.datetime.now()
