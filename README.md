@@ -24,6 +24,8 @@ pip install google
 ```
 pip install requests
 ```
+pip install wolframalpha
+```
 
 # JBot commands
 
@@ -36,6 +38,7 @@ Enter these words for the/a ...
 - Google (must input 'google' first to search for something)
 - Joke 
 - Flip (flip a coin)
+- Question (wolframa is another ai to help answer nearly any question)
 - Name, Age, Gender etc. (the bot's info)
 - password (generates a very strong password)
 - rps (play rock, paper, scissors with JBot)
