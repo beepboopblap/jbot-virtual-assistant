@@ -1,15 +1,16 @@
 import random
 import datetime
-import os
 from subprocess import call
 import requests, json
 import pyjokes
+import os
 import time
 from datetime import date
 from googlesearch import search
 from colorama import init
 from colorama import Fore
 from termcolor import colored
+import pickle
 
 init()
 
@@ -114,10 +115,18 @@ love_inp = ["love", "Love"]
 who_inp = ["who", "Who"]
 email_inp = ["Email", "Gmail", "gmail", "email", "mail"]
 call_inp = ["Call", "call"]
-rps_inp = ["rps", "RPS"]
+rps_inp = ["rps"]
 print(Fore.RED + "---- Welcome To JBot ----")
 print("   Made by beepboopblap" + "\n")
+user_name = ""
 
+
+if os.stat("user.txt").st_size == 0:
+    user_name = input("What is your name?: ")
+    pickle.dump(user_name, open("user.txt", "wb"))
+
+user_name = pickle.load(open("user.txt", "rb"))
+print("Hello", user_name)
 while assistant:
 
     user_inp = input(colored("What can JBot do for you today?: ", "green"))
