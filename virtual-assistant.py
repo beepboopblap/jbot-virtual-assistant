@@ -114,7 +114,7 @@ love_inp = ["love", "Love"]
 who_inp = ["who", "Who"]
 email_inp = ["Email", "Gmail", "gmail", "email", "mail"]
 call_inp = ["Call", "call"]
-rps_inp = ["rps"]
+rps_inp = ["rps", "RPS"]
 print(Fore.RED + "---- Welcome To JBot ----")
 print("   Made by beepboopblap" + "\n")
 
