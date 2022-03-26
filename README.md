@@ -21,9 +21,6 @@ pip install pyjokes
 pip install google
 ```
 ```
-pip install pywhatkit
-```
-```
 pip install requests
 ```
 
